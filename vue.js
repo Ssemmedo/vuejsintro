@@ -30,3 +30,15 @@ var app1 = new Vue({
       ]
     }
   })
+
+  var app5 = new Vue({
+    el: '#app5',
+    data: {
+      message: '!AOSSEP AMITÓ AMU É ÊCOV'
+    },
+    methods: {
+      reverseMessage: function () {
+        this.message = this.message.split('').reverse().join('')
+      }
+    }
+  })
