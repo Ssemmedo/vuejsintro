@@ -42,3 +42,10 @@ var app1 = new Vue({
       }
     }
   })
+
+  var app6 = new Vue({
+    el: '#app6',
+    data: {
+      message: 'Deixa sua Mensagem aqui'
+    }
+  })
