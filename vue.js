@@ -19,4 +19,14 @@ var app1 = new Vue({
     }
   })
 
-  
+  var app4 = new Vue({
+    el: '#app4',
+    data: {
+      pendentes: [
+        { text: 'Com o console aberto' },
+        { text: 'Digite "app4.todos.push({ text: "Nome do item" })"' },
+        { text: 'Para adicionar um novo item na lista!' },
+        { text: 'Substitua as aspas duplas por aspas simples!' }
+      ]
+    }
+  })

@@ -28,7 +28,13 @@
         </span>
     </div>
 
-    
+    <div id="app4">
+        <ol>
+          <li v-for="pendente in pendentes">
+            {{ pendente.text }}
+          </li>
+        </ol>
+      </div>
 
       <script src="./vue.js"></script>
 </body>
