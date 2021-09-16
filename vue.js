@@ -11,3 +11,12 @@ var app1 = new Vue({
       message: 'Você está acessando essa página no dia: ' + new Date().toLocaleString()
     }
   })
+
+  var app3 = new Vue({
+    el: '#app3',
+    data: {
+      seen: true
+    }
+  })
+
+  
