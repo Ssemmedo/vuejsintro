@@ -49,3 +49,29 @@ var app1 = new Vue({
       message: 'Deixa sua Mensagem aqui'
     }
   })
+
+  Vue.component('todo-item', {
+    props: ['todo'],
+    template: '<li>{{ todo.text }}</li>'
+  })
+
+  Vue.component('button-counter', {
+    data: function () {
+      return {
+        count: 0
+      }
+    },
+    template: '<button v-on:click="count++">Você já clicou em mim {{ count }} vezes.</button>'
+  })
+  
+  var app7 = new Vue({
+    el: '#app7',
+    data: {
+      todo: [
+        { id: 0, text: 'Aprender Vue.js' },
+        { id: 1, text: 'Combinar Vuejs e laravel' },
+        { id: 2, text: 'Criar o site do projeto de progmação para web' },
+        { id: 3, text: 'Me dar bem na disciplina e não deixar ela para trás!' }
+      ]
+    }
+  })

@@ -46,6 +46,18 @@
         <h3>Escreva algo lindo para alegrar seu dia!</h3>
         <p>{{ message }}</p>
         <input v-model="message">
+      </div> 
+
+      <h2>Todos elementos abaixo são do 7º exercício</h2>
+      <div id="app7">
+        <ol>
+          <todo-item
+            v-for="item in todo"
+            v-bind:todo="item"
+            v-bind:key="item.id"
+          ></todo-item>
+        </ol>
+        <button-counter></button-counter>
       </div>
 
       <script src="./vue.js"></script>
